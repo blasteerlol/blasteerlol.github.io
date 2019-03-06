@@ -22,8 +22,8 @@ header {
 .main-post {
     text-align: center;
     min-height: 600px;
-    background-image: url("img/HYPERBRUH.png");
-    background-color: black;
+    background-image: url("img/blaster.png");
+    background-color: #0E0E0E;
     /* background-color: #123b4a; */
 }
 
