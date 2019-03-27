@@ -54,11 +54,11 @@ header {
     height: 215px;
 }
 
-.back, .backgif, .backimg, .backclip {
+.back, .backgif, .backimg, .backclip, .backvideo {
     box-shadow: 0 0 4px 2px black;
 }
 
-.back > .desc, .backgif > .desc {
+.back > .desc, .backgif > .desc, .backvideo > .desc {
     color: black;
     padding: 0 5px;
     position: relative;
@@ -75,6 +75,10 @@ header {
 }
 
 .backgif > .desc {
+    width: 300px;
+}
+
+.backvideo > .desc {
     width: 300px;
 }
 
@@ -189,7 +193,7 @@ nav > ul > li:hover > a {
 
 /* BACK GIF / BACKIMG */
 
-.backgif, .backimg {
+.backgif, .backimg, .backvideo {
     margin-top: 5;
     margin-right: 5;
     background: #444444;
@@ -200,13 +204,18 @@ nav > ul > li:hover > a {
     margin-bottom: 4px;
 }
 
+.backvideo {
+    height: 321px;
+    vertical-align: bottom;
+}
+
 /* GIF */
 
-.gif {
+.gif, .video {
     position: relative;
 }
 
-.gif > img, .img > img {
+.gif > img, .img > img, .video > video {
     display: block;
     cursor: pointer;
     border-radius: 10px;
@@ -216,6 +225,11 @@ nav > ul > li:hover > a {
     margin-bottom: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
     transition: all 0.3s;
+}
+
+.video > video {
+    max-width: 500px;
+    height: 250px;
 }
 
 .gif > i {
